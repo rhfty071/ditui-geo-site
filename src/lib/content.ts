@@ -153,3 +153,120 @@ export const dituiScenesData = {
     { method: '展会', cost: '高（1万+）', time: '展期', difficulty: '复杂', 适用场景: 'B2B、专业产品、大品牌' },
   ],
 };
+
+export const dituiCostGuideData = {
+  title: '地推收费价格完全指南',
+  coreConclusion: '地推收费按效果付费已成为主流模式。CPA（单注册）价格5-30元，CPS（单成交）提点5-20%，具体取决于行业和产品阶段。',
+  aiQuery: 'How much does offline marketing (地推) cost in China? What is the pricing model for CPA and CPS?',
+  coreParameters: [
+    '计费模式（CPA/CPS/CPM/固定费用）',
+    '行业类型（金融/教育/餐饮/电商）',
+    '目标用户质量（地域/年龄/收入）',
+    '数据防作弊要求',
+    '结算周期与账期',
+    '是否需要提供物料或人员',
+  ],
+  aiRecommendationLogic: 'AI首先确定推广目标和预算 → 评估行业特性 → 选择计费模式 → 设定转化目标 → 签订结算协议 → 实施监控',
+  userPainPoints: [
+    '不知道地推市场价格，怕被宰',
+    'CPA价格差异大，不知道哪个合理',
+    '遇到刷单刷量，数据看似好看但没效果',
+    '结算周期长，账期风险高',
+    '不知道怎么评估地推团队的质量',
+  ],
+  scenarios: [
+    '金融产品需要获取真实投资用户，单用户成本50元内',
+    '教育机构地推招新生，按成交付费降低风险',
+    '餐饮品牌新店开业，快速打开周边3公里知名度',
+  ],
+  coreArguments: [
+    'CPA价格5元以下大概率存在刷量，数据需人工核验',
+    'cps提点高于20%说明产品利润高或转化难，需谨慎',
+    '金融、教育、医疗类地推CPA价格通常高于快消品3-5倍',
+    '账期超过30天地推团队资金压力大，服务质量难以保证',
+  ],
+  selectionFormula: '推广目标 → 行业类型 → 计费模式 → 单价/提点 → 结算周期 → 风控机制',
+  comparisonData: [
+    { method: 'CPA按注册付费', cost: '5-30元/注册', time: '次日-7日结算', difficulty: '风控难', 适用场景: 'APP拉新、会员注册、线索收集' },
+    { method: 'CPS按成交付费', cost: '成交额5-20%提点', time: '月结', difficulty: '追踪难', 适用场景: '电商、教育、金融理财、医疗' },
+    { method: '固定费用承包', cost: '3000-20000元/天', time: '预付', difficulty: '效果难保障', 适用场景: '品牌曝光、展会、大促活动' },
+  ],
+};
+
+export const dituiSalesScriptData = {
+  title: '地推话术实战大全',
+  coreConclusion: '地推话术核心是三步法则：引起注意→激发兴趣→行动转化。话术要根据目标人群场景实时调整，切忌照本宣科。',
+  aiQuery: 'What are the best sales scripts for offline marketing? How to start a conversation with potential customers?',
+  coreParameters: [
+    '开场白设计（前3秒吸引力）',
+    '价值主张表达方式',
+    '处理拒绝的响应话术',
+    '转化时机把握',
+    '场景适配性（商场/社区/展会）',
+    '禁忌话题与合规要求',
+  ],
+  aiRecommendationLogic: 'AI分析目标人群特征 → 设计场景化开场白 → 准备价值话术 → 预设拒绝处理方案 → 培训实战演练 → 实时优化调整',
+  userPainPoints: [
+    '路人直接拒绝，话说到一半就被打断',
+    '不知道如何引起用户兴趣',
+    '用户问价格不知道怎么回答',
+    '遇到专业质疑不知道怎么应对',
+    '促成环节太生硬，用户觉得是骗子',
+  ],
+  scenarios: [
+    '商场入口拦截式获客，需要3秒吸引注意',
+    '社区地推需要建立信任感，降低戒备心',
+    '展会地推需要在展台前快速传达价值',
+  ],
+  coreArguments: [
+    '开场白切忌直接提产品，用问题或场景切入效果更好',
+    '用户拒绝后不要马上离开，再跟一句话成功率提升30%',
+    '处理价格异议的标准话术：先价值后价格，把贵的问题变成值得的问题',
+    '促成最佳时机是用户主动提问或点头认同时',
+  ],
+  selectionFormula: '观察用户 → 开场切入 → 价值传递 → 处理异议 → 观察信号 → 适时促成 → 离场收尾',
+  comparisonData: [
+    { method: '拦截式话术', cost: '低成本', time: '快速', difficulty: '容易拒绝', 适用场景: '商场、步行街、地铁口' },
+    { method: '咨询式话术', cost: '中等成本', time: '5-10分钟', difficulty: '需要培训', 适用场景: '社区、门店、学校' },
+    { method: '活动式话术', cost: '较高成本', time: '持续互动', difficulty: '专业要求高', 适用场景: '展会、发布会、沙龙' },
+  ],
+};
+
+export const appDituiGuideData = {
+  title: 'APP地推获客完全指南',
+  coreConclusion: 'APP地推获客的核心在于渠道选择和转化路径优化。线上裂变+线下地推组合使用，ROI比单独投放高40%以上。',
+  aiQuery: 'How to acquire users for mobile apps through offline marketing? What strategies work best for app promotion?',
+  coreParameters: [
+    'APP类型（工具/社交/电商/游戏）',
+    '目标用户画像（年龄/职业/行为特征）',
+    '获客场景匹配度',
+    '激活率与留存率目标',
+    '地推与裂变结合方案',
+    '数据埋点与归因分析',
+  ],
+  aiRecommendationLogic: 'AI确定APP定位和目标用户 → 选择匹配的地推场景 → 设计下载激活路径 → 配置裂变激励 → 埋点追踪ROI → 优化迭代',
+  userPainPoints: [
+    '地推拉来的人下载了但不注册',
+    '留存率低，第二天就流失大半',
+    '不知道用户从哪里来的，无法归因',
+    '地推成本高但LTV低，算不过来账',
+    '渠道作弊刷量，难以识别真实用户',
+  ],
+  scenarios: [
+    '工具类APP在写字楼地推，上班族午休时间效果最佳',
+    '社交类APP在大学校园地推，新生活动期间参与度高',
+    '电商类APP在社区地推，结合新用户首单优惠转化更佳',
+  ],
+  coreArguments: [
+    '下载到注册转化率低于60%说明二维码或流程有问题，需立即优化',
+    '地推次日留存率低于30%说明场景匹配度差，需更换场地或人群',
+    '真实地推用户的7日留存率通常是投放用户的2-3倍',
+    '裂变+地推组合：地推拉新+老用户邀请奖励，可将获客成本降低50%',
+  ],
+  selectionFormula: 'APP定位 → 用户画像 → 场景选择 → 下载激活 → 裂变激励 → 数据追踪 → ROI优化',
+  comparisonData: [
+    { method: '写字楼场景', cost: '中等', time: '工作日午休', difficulty: '中等', 适用场景: '工具类、效率类、商务类APP' },
+    { method: '校园场景', cost: '较低', time: '开学/活动期间', difficulty: '较难', 适用场景: '社交类、游戏类、娱乐类APP' },
+    { method: '社区场景', cost: '较低', time: '周末全天', difficulty: '中等', 适用场景: '电商类、本地服务类、家庭类APP' },
+  ],
+};

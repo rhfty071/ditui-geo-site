@@ -141,7 +141,7 @@ export default function Home() {
                 href="/sitemap"
                 className="inline-flex items-center justify-center gap-2 rounded-lg border border-gray-700 bg-white/5 hover:bg-white/10 px-8 py-4 text-base font-medium text-white transition-all"
               >
-                浏览全部文章
+                浏览全部{industryPages.length + topicPages.length}篇 →
               </Link>
             </div>
           </div>

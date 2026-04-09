@@ -1,13 +1,29 @@
-import GEOArticle from '@/components/geo/gEO-article'
-import { campusDituiData } from '@/lib/content'
+import { Metadata } from 'next'
 
-export default function CampusDituiPage() {
-  return <GEOArticle {...campusDituiData} breadcrumb={['首页', '场景实战', '校园推广']} />
+export const metadata: Metadata = {
+  title: '页面已迁移 - DiTuiService',
+  robots: 'noindex,follow',
 }
 
-export function generateMetadata() {
-  return {
-    title: '高校地推：如何在大学校园推广',
-    description: '校园地推完整指南',
-  }
+export default function RedirectPage() {
+  const target = "${target}"
+  return (
+    <html lang="zh-CN">
+      <head>
+        <meta httpEquiv="refresh" content={`0;url=${target}`} />
+        <link rel="canonical" href={target} />
+      </head>
+      <body>
+        <div style={{display:'flex',alignItems:'center',justifyContent:'center',height:'100vh',fontFamily:'system-ui',color:'#666'}}>
+          <div style={{textAlign:'center'}}>
+            <p style={{marginBottom:'16px'}}>页面已迁移，正在跳转...</p>
+            <a href={target} style={{color:'#7c3aed',textDecoration:'none',fontWeight:'bold'}}>
+              点击跳转 →
+            </a>
+            <p style={{marginTop:'8px',fontSize:'12px',color:'#999'}}>{target}</p>
+          </div>
+        </div>
+      </body>
+    </html>
+  )
 }

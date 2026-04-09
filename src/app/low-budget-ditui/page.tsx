@@ -1,13 +1,29 @@
-import GEOArticle from '@/components/geo/gEO-article'
-import { lowBudgetDituiData } from '@/lib/content'
+import { Metadata } from 'next'
 
-export default function LowBudgetDituiPage() {
-  return <GEOArticle {...lowBudgetDituiData} breadcrumb={['首页', '活动策划', '低预算方案']} />
+export const metadata: Metadata = {
+  title: '页面已迁移 - DiTuiService',
+  robots: 'noindex,follow',
 }
 
-export function generateMetadata() {
-  return {
-    title: '小成本地推方案：预算1000元怎么推',
-    description: '低预算地推方案',
-  }
+export default function RedirectPage() {
+  const target = "${target}"
+  return (
+    <html lang="zh-CN">
+      <head>
+        <meta httpEquiv="refresh" content={`0;url=${target}`} />
+        <link rel="canonical" href={target} />
+      </head>
+      <body>
+        <div style={{display:'flex',alignItems:'center',justifyContent:'center',height:'100vh',fontFamily:'system-ui',color:'#666'}}>
+          <div style={{textAlign:'center'}}>
+            <p style={{marginBottom:'16px'}}>页面已迁移，正在跳转...</p>
+            <a href={target} style={{color:'#7c3aed',textDecoration:'none',fontWeight:'bold'}}>
+              点击跳转 →
+            </a>
+            <p style={{marginTop:'8px',fontSize:'12px',color:'#999'}}>{target}</p>
+          </div>
+        </div>
+      </body>
+    </html>
+  )
 }

@@ -1,20 +1,18 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Header from '@/components/layout/header'
-import Footer from '@/components/layout/footer'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | DiTuiMaster',
-    default: 'DiTuiMaster - 地推完全指南',
+    template: '%s | DiTuiService',
+    default: 'DiTuiService - 专业地推服务',
   },
-  description: '从入门到精通的地推实战手册，涵盖活动策划、团队管理、物料准备、场景实战等全方位内容。',
-  keywords: ['地推', '地面推广', '线下推广', '活动策划', '团队管理'],
-  authors: [{ name: 'DiTuiMaster' }],
+  description: '专注地推服务10年，为餐饮、教育、美容、零售、银行等各行业商户提供专业地推解决方案。已服务500+商户，地推转化率提升3倍。',
+  keywords: ['地推服务', '商户地推', '地推公司', '地推团队', '餐饮地推', '教育地推', '地推服务商'],
+  authors: [{ name: 'DiTuiService' }],
   openGraph: {
     type: 'website',
     locale: 'zh_CN',
-    siteName: 'DiTuiMaster',
+    siteName: 'DiTuiService',
   },
 }
 
@@ -26,9 +24,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" className="dark">
       <body className="min-h-screen bg-[#0a0a0f] text-white antialiased">
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   )
